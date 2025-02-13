@@ -1,0 +1,20 @@
+{
+  "recommendations": [
+    {
+      "name": "William Baldwin",
+      "recommendation": "I've worked with Dylan for over a year and would highly recommend working with him! During this time I've been impressed to see him take the raw characteristics of a good developer and form them into a really well-rounded and strong frontend developer. Dylan is:\n\n• A workhorse. He will work hard to meet deadlines, as well as making sure the right things are prioritized so that time isn't wasted. He specifically was responsible for helping us to meet a huge client deadline this past year.\n\n• Great at revisiting and tying up loose ends to really make the product shine, whether that's adding test coverage or hitting the lower priority items that didn't make the cut for the initial deadline.",
+      "date": "April 15, 2024",
+      "position": "Team Lead",
+      "relation": "Managed Dylan directly",
+      "from": "Autostore"
+    },
+    {
+      "name": "Jamie Gorman",
+      "recommendation": "As a fellow frontend engineer, I had the pleasure of collaborating closely with Dylan for nearly 2 years at AutoStore. Dylan approaches challenges with determination, diving headfirst into problems and consistently delivering high-quality work. His dedication to understanding the domain, learning new things and his proactive attitude make him a valuable asset to any team. Dylan is great to work with, loves to collaborate and always has a positive attitude. I wholeheartedly recommend Dylan for any software team seeking a talented and reliable engineer.",
+      "date": "April 15, 2024",
+      "position": "Senior Front-End Engineer",
+      "relation": "Worked on the same team",
+      "from": "Autostore"
+    }
+  ]
+}

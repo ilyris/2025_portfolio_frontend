@@ -1,0 +1,22 @@
+{
+    "projects": [
+        {
+            "title": "Bond Ladder",
+            "description": "Built out a Bond Ladder tool one of the clients we were working with. This project was a lot of fun as it was a duo project with me and another front-end engineer. This project was closely tied to multiple shareholders as they wanted to push this project out within a month of its start date.",
+            "image": null,
+            "technology": ["React", "NextJs", "React-Bootstrap", "Redux", "HighCharts", "SASS", "TypeScript", "Webpack"],
+            "github": null,
+            "websiteUrl": "https://www.invesco.com/bulletshares/tools/bond-ladder"            
+        },
+        {
+            "title": "Qubit",
+            "description": "Qubit is a SaaS kiosk program which interfaces with the user and the Autostore's grid system. Some of the noteable features I worked on within Qubit while employed at Autostore was a new inventory system implementation for clients with larger output & a complex cycle-counting inventory system.",
+            "image": null,
+            "technology": ["React", "NextJs", "Material-UI", "Redux", "Redux-Toolkit", "Redux-Toolkit-Query", "Cypress", "Vite", "Jest", "Playwright"],
+            "github": null,
+            "websiteUrl": "https://www.autostoresystem.com/system/qubit-fulfillment-platform"            
+        }
+
+    ]
+    
+}

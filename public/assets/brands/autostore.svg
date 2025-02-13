@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23.064" height="32" viewBox="0 0 23.064 32">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_578" data-name="Rectangle 578" width="23.064" height="32" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="autostore_Symbol" transform="translate(11.532 16)">
+    <g id="Group_577" data-name="Group 577" transform="translate(-11.532 -16)" clip-path="url(#clip-path)">
+      <path id="Path_3001" data-name="Path 3001" d="M57.309,2.6A2.6,2.6,0,1,1,54.7,0a2.6,2.6,0,0,1,2.6,2.6" transform="translate(-43.173)" fill="#e11b22"/>
+      <path id="Path_3002" data-name="Path 3002" d="M5.209,54.7a2.6,2.6,0,1,1-2.6-2.6,2.6,2.6,0,0,1,2.6,2.6" transform="translate(0 -43.173)" fill="#e11b22"/>
+      <path id="Path_3003" data-name="Path 3003" d="M109.409,54.7a2.6,2.6,0,1,1-2.6-2.6,2.6,2.6,0,0,1,2.6,2.6" transform="translate(-86.345 -43.173)" fill="#e11b22"/>
+      <path id="Path_3004" data-name="Path 3004" d="M57.309,106.8a2.6,2.6,0,1,1-2.6-2.6,2.6,2.6,0,0,1,2.6,2.6" transform="translate(-43.173 -86.345)" fill="#e11b22"/>
+      <path id="Path_3005" data-name="Path 3005" d="M5.209,158.9a2.6,2.6,0,1,1-2.6-2.6,2.6,2.6,0,0,1,2.6,2.6" transform="translate(0 -129.518)" fill="#e11b22"/>
+      <path id="Path_3006" data-name="Path 3006" d="M109.409,158.9a2.6,2.6,0,1,1-2.6-2.6,2.6,2.6,0,0,1,2.6,2.6" transform="translate(-86.345 -129.518)" fill="#e11b22"/>
+      <path id="Path_3007" data-name="Path 3007" d="M5.209,158.9a2.6,2.6,0,1,1-2.6-2.6,2.6,2.6,0,0,1,2.6,2.6" transform="translate(0 -129.518)" fill="#e11b22"/>
+      <path id="Path_3008" data-name="Path 3008" d="M109.409,158.9a2.6,2.6,0,1,1-2.6-2.6,2.6,2.6,0,0,1,2.6,2.6" transform="translate(-86.345 -129.518)" fill="#e11b22"/>
+    </g>
+  </g>
+</svg>
