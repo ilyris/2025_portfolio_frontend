@@ -26,7 +26,7 @@ const Projects = () => {
   return (
     <>
       <header className="sticky flex justify-center">
-        <MainNavigation isAuthenticated={isAuthenticated} />
+        <MainNavigation />
       </header>
       <main>
         <div className="container mx-auto py-10">

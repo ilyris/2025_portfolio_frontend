@@ -102,7 +102,7 @@ const ProjectAddPage = () => {
         Technologies: projectFormState.Technologies,
         Github: projectFormState.Github,
         WebsiteUrl: projectFormState.WebsiteUrl,
-        Image: projectFormState.Image ? projectFormState.Image.name : null, // Fix: Ensure it's a string or null
+        Image: projectFormState.Image ? projectFormState.Image.name : null,
         ImageUrl: ImageUrl || "",
       };
 
@@ -131,100 +131,108 @@ const ProjectAddPage = () => {
 
   return (
     <>
-      <header>
-        <MainNavigation isAuthenticated={isAuthenticated} />
-      </header>
-      <main>
-        <section className="container mx-auto">
-          <form
-            className="flex justify-center items-center flex-col w-1/2 mx-auto rounded-xl border border-black p-5"
-            onSubmit={addProject}
-          >
-            <Typography variant="h3" className="text-center">
-              Add Project
-            </Typography>
+      {isAuthenticated ? (
+        <>
+          <header>
+            <MainNavigation />
+          </header>
+          <main>
+            <section className="container mx-auto">
+              <form
+                className="flex justify-center items-center flex-col w-1/2 mx-auto rounded-xl border border-black p-5"
+                onSubmit={addProject}
+              >
+                <Typography variant="h3" className="text-center">
+                  Add Project
+                </Typography>
 
-            {/* Title */}
-            <div className="flex flex-col w-full pt-5">
-              <label>Title</label>
-              <input
-                type="text"
-                name="Title"
-                className="border-secondary-dark border p-2 rounded-md"
-                value={projectFormState.Title}
-                onChange={handleOnChange}
-              />
-            </div>
+                {/* Title */}
+                <div className="flex flex-col w-full pt-5">
+                  <label>Title</label>
+                  <input
+                    type="text"
+                    name="Title"
+                    className="border-secondary-dark border p-2 rounded-md"
+                    value={projectFormState.Title}
+                    onChange={handleOnChange}
+                  />
+                </div>
 
-            {/* Description */}
-            <div className="flex flex-col w-full py-5">
-              <label>Description</label>
-              <input
-                type="text"
-                name="Description"
-                className="border-secondary-dark border p-2 rounded-md"
-                value={projectFormState.Description}
-                onChange={handleOnChange}
-              />
-            </div>
+                {/* Description */}
+                <div className="flex flex-col w-full py-5">
+                  <label>Description</label>
+                  <input
+                    type="text"
+                    name="Description"
+                    className="border-secondary-dark border p-2 rounded-md"
+                    value={projectFormState.Description}
+                    onChange={handleOnChange}
+                  />
+                </div>
 
-            {/* Technologies */}
-            <div className="flex flex-col w-full py-5">
-              <label>Technologies</label>
-              <input
-                type="text"
-                name="Technologies"
-                className="border-secondary-dark border p-2 rounded-md"
-                value={projectFormState.Technologies}
-                onChange={handleOnChange}
-              />
-            </div>
+                {/* Technologies */}
+                <div className="flex flex-col w-full py-5">
+                  <label>Technologies</label>
+                  <input
+                    type="text"
+                    name="Technologies"
+                    className="border-secondary-dark border p-2 rounded-md"
+                    value={projectFormState.Technologies}
+                    onChange={handleOnChange}
+                  />
+                </div>
 
-            {/* Github */}
-            <div className="flex flex-col w-full py-5">
-              <label>Github</label>
-              <input
-                type="text"
-                name="Github"
-                className="border-secondary-dark border p-2 rounded-md"
-                value={projectFormState.Github}
-                onChange={handleOnChange}
-              />
-            </div>
+                {/* Github */}
+                <div className="flex flex-col w-full py-5">
+                  <label>Github</label>
+                  <input
+                    type="text"
+                    name="Github"
+                    className="border-secondary-dark border p-2 rounded-md"
+                    value={projectFormState.Github}
+                    onChange={handleOnChange}
+                  />
+                </div>
 
-            {/* Website URL */}
-            <div className="flex flex-col w-full py-5">
-              <label>Website Url</label>
-              <input
-                type="text"
-                name="WebsiteUrl"
-                className="border-secondary-dark border p-2 rounded-md"
-                value={projectFormState.WebsiteUrl}
-                onChange={handleOnChange}
-              />
-            </div>
+                {/* Website URL */}
+                <div className="flex flex-col w-full py-5">
+                  <label>Website Url</label>
+                  <input
+                    type="text"
+                    name="WebsiteUrl"
+                    className="border-secondary-dark border p-2 rounded-md"
+                    value={projectFormState.WebsiteUrl}
+                    onChange={handleOnChange}
+                  />
+                </div>
 
-            {/* Image Upload */}
-            <div className="flex flex-col w-full py-5">
-              <label>Image</label>
-              <input
-                type="file"
-                name="Image"
-                className="border-secondary-dark border p-2 rounded-md"
-                accept="image/png, image/jpeg"
-                onChange={handleFileChange}
-              />
-            </div>
+                {/* Image Upload */}
+                <div className="flex flex-col w-full py-5">
+                  <label>Image</label>
+                  <input
+                    type="file"
+                    name="Image"
+                    className="border-secondary-dark border p-2 rounded-md"
+                    accept="image/png, image/jpeg"
+                    onChange={handleFileChange}
+                  />
+                </div>
 
-            {/* Submit Button */}
-            <div className="w-full">
-              <button className="bg-secondary-light py-3 px-10 rounded-md w-full text-lg">
-                Add
-              </button>
-            </div>
-          </form>
-        </section>
-      </main>
+                {/* Submit Button */}
+                <div className="w-full">
+                  <button className="bg-secondary-light py-3 px-10 rounded-md w-full text-lg">
+                    Add
+                  </button>
+                </div>
+              </form>
+            </section>
+          </main>
+        </>
+      ) : (
+        <main>
+          <Typography variant="h2"> Get Authenticated Nerd </Typography>
+        </main>
+      )}
     </>
   );
 };

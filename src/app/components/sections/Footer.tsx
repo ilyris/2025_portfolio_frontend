@@ -60,4 +60,5 @@ const FooterSection = () => {
     </footer>
   );
 };
+
 export default FooterSection;

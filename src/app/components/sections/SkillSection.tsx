@@ -15,7 +15,6 @@ import GithubLogo from "@/../public/assets/skills/github.svg";
 import DrupalLogo from "@/../public/assets/skills/drupal.png";
 
 import Image from "next/image";
-import Typography from "../global/Typography";
 import SectionHeadingContainer from "../global/SectionHeadingContainer";
 
 const SkillSection = () => {
