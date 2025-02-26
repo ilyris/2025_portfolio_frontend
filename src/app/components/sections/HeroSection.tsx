@@ -43,8 +43,8 @@ const HeroSection = () => {
       <div className="w-[50%] text-center mx-auto py-5">
         <Typography variant="h5">
           I am a Software Engineer with 7+ years of enterprise experience,
-          building and scaling solutions for some of the world's most recognized
-          brands.
+          building and scaling solutions for some of the world&apos;s most
+          recognized brands.
         </Typography>
       </div>
     </section>
