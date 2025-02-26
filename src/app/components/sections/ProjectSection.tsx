@@ -30,7 +30,7 @@ const ProjectSection = () => {
   }, []);
 
   return (
-    <section className="bg-primary py-20">
+    <section id="projects" className="bg-primary py-20">
       <SectionHeadingContainer title={"Featured Work"} />
       <ul className="mx-auto container">
         {isFetchingData
