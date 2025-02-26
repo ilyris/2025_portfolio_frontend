@@ -1,8 +1,10 @@
 import Link from "next/link";
 import MainLink from "../global/Link";
-import Typography from "../global/Typography";
 
-const MainNavigation = () => {
+interface MainNavigationProps {
+  isAuthenticated: boolean | null;
+}
+const MainNavigation: React.FC<MainNavigationProps> = ({ isAuthenticated }) => {
   return (
     <nav className="container flex justify-between p-8">
       <div className="group rounded-full bg-secondary p-3">
@@ -17,7 +19,7 @@ const MainNavigation = () => {
       </div>
       <ul>
         <MainLink path="/" variant="primary" text="Home" />
-        <MainLink path="/" variant="primary" text="Projects" />
+        <MainLink path="/projects" variant="primary" text="Projects" />
         <MainLink path="/" variant="secondary" text="Contact" />
       </ul>
     </nav>

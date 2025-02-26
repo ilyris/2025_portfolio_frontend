@@ -36,7 +36,7 @@ const ProjectCard: React.FC<ProjectResponseDto> = ({
               </span>
             </Link>
           )}
-          <Typography variant="body1" className="pt-5">
+          <Typography variant="body1" className="pt-5 text-secondary-dark">
             {description}
           </Typography>
         </div>
