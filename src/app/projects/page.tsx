@@ -7,22 +7,6 @@ import ProjectSection from "../components/sections/ProjectSection";
 import MainLink from "../components/global/Link";
 
 const Projects = () => {
-  const [isAuthenticated, setIsAuthenticated] = useState<boolean | null>(null); // Track auth state
-
-  useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, (user) => {
-      if (user) {
-        console.log("signed in");
-        setIsAuthenticated(true);
-      } else {
-        console.log("no user");
-        setIsAuthenticated(false);
-      }
-    });
-
-    return () => unsubscribe();
-  }, []);
-
   return (
     <>
       <header className="sticky flex justify-center">
