@@ -1,10 +1,7 @@
 import Link from "next/link";
 import MainLink from "../global/Link";
 
-interface MainNavigationProps {
-  isAuthenticated: boolean | null;
-}
-const MainNavigation: React.FC<MainNavigationProps> = ({ isAuthenticated }) => {
+const MainNavigation = () => {
   return (
     <nav className="container flex justify-between p-8">
       <div className="group rounded-full bg-secondary p-3">

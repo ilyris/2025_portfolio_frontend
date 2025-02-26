@@ -1,52 +1,33 @@
 "use client";
 import { useState } from "react";
 import Typography from "../components/global/Typography";
-import {  createUserWithEmailAndPassword, signInWithEmailAndPassword  } from 'firebase/auth';
-import { auth } from '@/firebase';
-import { useRouter } from 'next/navigation'
+import {
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+} from "firebase/auth";
+import { auth } from "@/firebase";
+import { useRouter } from "next/navigation";
 
 const Login = () => {
   const router = useRouter();
   const [email, setEmail] = useState<string>("");
   const [password, setPassword] = useState<string>("");
 
-  const  handleSignup = async (e: React.ChangeEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    // axios.post("http://localhost:5167/api/login", {
-    //   email,
-    //   password,
-    // });
-
-    await createUserWithEmailAndPassword(auth, email, password)
-    .then((userCredential) => {
-        // Signed in
-        const user = userCredential.user;
-        console.log(user);
-        router.push("/admin");
-    })
-    .catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        console.log(errorCode, errorMessage);
-    });
-  };
-
   const onLogin = (e: React.ChangeEvent<HTMLFormElement>) => {
     e.preventDefault();
     signInWithEmailAndPassword(auth, email, password)
-    .then((userCredential) => {
+      .then((userCredential) => {
         // Signed in
         const user = userCredential.user;
-        router.push("/")
+        router.push("/");
         console.log(user);
-    })
-    .catch((error) => {
+      })
+      .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
-        console.log(errorCode, errorMessage)
-    });
-
-}
+        console.log(errorCode, errorMessage);
+      });
+  };
 
   const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setEmail(e.target.value);

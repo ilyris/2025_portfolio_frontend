@@ -1,7 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import { Project, ProjectResponseDto } from "../../../../typings";
-import Typography from "../global/Typography";
+import { ProjectResponseDto } from "../../../../typings";
 import ProjectCard from "../projects/ProjectCard";
 import axios from "axios";
 import ProjectCardSkeleton from "../projects/ProjectCardSkeleton";
