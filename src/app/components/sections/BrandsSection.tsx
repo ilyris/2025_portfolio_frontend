@@ -6,7 +6,6 @@ import UwOshLogo from "@/../public/assets/brands/UW_Oshkosh_logo.png";
 import InvescoLogo from "@/../public/assets/brands/invesco-logo.png";
 
 import Image from "next/image";
-import Typography from "../global/Typography";
 import SectionHeadingContainer from "../global/SectionHeadingContainer";
 
 const BrandsSection = () => {

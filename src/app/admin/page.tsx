@@ -1,10 +1,7 @@
 "use client";
 import { useState } from "react";
 import Typography from "../components/global/Typography";
-import {
-  createUserWithEmailAndPassword,
-  signInWithEmailAndPassword,
-} from "firebase/auth";
+import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "@/firebase";
 import { useRouter } from "next/navigation";
 

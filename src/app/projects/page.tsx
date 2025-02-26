@@ -1,8 +1,4 @@
-"use client";
-import { useEffect, useState } from "react";
 import MainNavigation from "../components/menus/MainNavigation";
-import { onAuthStateChanged } from "firebase/auth";
-import { auth } from "@/firebase";
 import ProjectSection from "../components/sections/ProjectSection";
 import MainLink from "../components/global/Link";
 

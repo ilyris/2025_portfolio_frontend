@@ -26,7 +26,7 @@ const FooterSection = () => {
                 Projects
               </Link>
               <Typography variant="body1">
-                View Dylan's professional work.
+                View Dylan&apos;s professional work.
               </Typography>
             </li>
             <li className="text-xl mb-5">
@@ -37,7 +37,7 @@ const FooterSection = () => {
                 Testimonials
               </Link>
               <Typography variant="body1">
-                See what people are saying about Dylan's work.
+                See what people are saying about Dylan&apos;s work.
               </Typography>
             </li>
             <li className="text-xl mb-5">
