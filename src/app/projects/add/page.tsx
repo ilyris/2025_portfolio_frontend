@@ -44,7 +44,7 @@ const ProjectAddPage = () => {
   const getPresignedUrl = async (file: File): Promise<string> => {
     try {
       const response = await axios.get(
-        "http://localhost:5167/api/project/get-presigned-url",
+        `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/project/get-presigned-url`,
         {
           params: { fileName: file.name, contentType: file.type },
         }
@@ -108,7 +108,7 @@ const ProjectAddPage = () => {
 
       // Step 4: Submit project data to backend
       const projectResponse = await axios.post(
-        "http://localhost:5167/api/project/add",
+        `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/project/add`,
         projectData,
         {
           headers: { "Content-Type": "application/json" },
