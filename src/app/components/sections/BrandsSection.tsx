@@ -24,7 +24,10 @@ const BrandsSection = () => {
       <div className="w-full pt-10">
         <div className="flex gap-20 content-center justify-center">
           {logos.map((logo, index) => (
-            <div key={index} className="max-h-[250] max-w-[150] content-center">
+            <div
+              key={index}
+              className="max-h-[250px] max-w-[150px] content-center"
+            >
               <Image src={logo.src} alt={logo.alt} />
             </div>
           ))}
