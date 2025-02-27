@@ -5,33 +5,33 @@ const ProjectCardSkeleton = () => {
         <div>
           <div
             data-aria-title="title"
-            className="bg-gray-300  h-[150] w-fill py-10"
+            className="bg-gray-300  h-[150px] w-fill py-10"
           ></div>
           <div
             data-aria-websiteurl="website link"
-            className="bg-gray-300  h-[35] w-[250] my-6"
+            className="bg-gray-300  h-[35px] w-[250px] my-6"
           ></div>
           <div data-aria-description="project description">
-            <div className="bg-gray-300  rounded-xl h-[10] w-full my-3"></div>
-            <div className="bg-gray-300  rounded-xl h-[10] w-full my-3"></div>
-            <div className="bg-gray-300  rounded-xl h-[10] w-full my-3"></div>
-            <div className="bg-gray-300  rounded-xl h-[10] w-full my-3"></div>
-            <div className="bg-gray-300  rounded-xl h-[10] w-full my-3"></div>
-            <div className="bg-gray-300  rounded-xl h-[10] w-full my-3"></div>
-            <div className="bg-gray-300  rounded-xl h-[10] w-full my-3"></div>
+            <div className="bg-gray-300  rounded-xl h-[10px] w-full my-3"></div>
+            <div className="bg-gray-300  rounded-xl h-[10px] w-full my-3"></div>
+            <div className="bg-gray-300  rounded-xl h-[10px] w-full my-3"></div>
+            <div className="bg-gray-300  rounded-xl h-[10px] w-full my-3"></div>
+            <div className="bg-gray-300  rounded-xl h-[10px] w-full my-3"></div>
+            <div className="bg-gray-300  rounded-xl h-[10px] w-full my-3"></div>
+            <div className="bg-gray-300  rounded-xl h-[10px] w-full my-3"></div>
           </div>
         </div>
         <ul
           className="flex gap-2 flex-wrap"
           data-aria-technologies="list of technologies"
         >
-          <li className="bg-gray-300 rounded-xl h-[25] w-[100] py-1 px-3 "></li>
-          <li className="bg-gray-300 rounded-xl h-[25] w-[100] py-1 px-3 "></li>
-          <li className="bg-gray-300 rounded-xl h-[25] w-[100] py-1 px-3 "></li>
-          <li className="bg-gray-300 rounded-xl h-[25] w-[100] py-1 px-3 "></li>
-          <li className="bg-gray-300 rounded-xl h-[25] w-[100] py-1 px-3 "></li>
-          <li className="bg-gray-300 rounded-xl h-[25] w-[100] py-1 px-3 "></li>
-          <li className="bg-gray-300 rounded-xl h-[25] w-[100] py-1 px-3 "></li>
+          <li className="bg-gray-300 rounded-xl h-[25px] w-[100px] py-1 px-3 "></li>
+          <li className="bg-gray-300 rounded-xl h-[25px] w-[100px] py-1 px-3 "></li>
+          <li className="bg-gray-300 rounded-xl h-[25px] w-[100px] py-1 px-3 "></li>
+          <li className="bg-gray-300 rounded-xl h-[25px] w-[100px] py-1 px-3 "></li>
+          <li className="bg-gray-300 rounded-xl h-[25px] w-[100px] py-1 px-3 "></li>
+          <li className="bg-gray-300 rounded-xl h-[25px] w-[100px] py-1 px-3 "></li>
+          <li className="bg-gray-300 rounded-xl h-[25px] w-[100px] py-1 px-3 "></li>
         </ul>
       </div>
       <div className=" bg-gray-300 w-3/4 h-auto"></div>
