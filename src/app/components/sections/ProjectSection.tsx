@@ -12,11 +12,14 @@ const ProjectSection = () => {
 
   const handleFetchingProjects = async () => {
     try {
-      const response = await axios.get("http://localhost:5167/api/project", {
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
+      const response = await axios.get(
+        `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/project`,
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
       setProjects(response.data);
       setIsFetchingData(false);
     } catch (error) {
