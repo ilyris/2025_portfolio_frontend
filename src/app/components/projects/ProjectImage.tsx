@@ -14,6 +14,8 @@ const ProjectImage = ({ image, title }: { image: string; title: string }) => {
         }`}
         src={image}
         alt={`${title} website image`}
+        width={500}
+        height={500}
         onLoad={() => setLoading(false)}
       />
     </div>

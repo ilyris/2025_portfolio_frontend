@@ -4,6 +4,7 @@ import MainNavigation from "@/app/components/menus/MainNavigation";
 import { auth } from "@/firebase";
 import axios from "axios";
 import { onAuthStateChanged } from "firebase/auth";
+import { useRouter } from "next/navigation";
 import { ChangeEvent, useEffect, useState } from "react";
 
 interface ProjectFormState {
@@ -11,27 +12,47 @@ interface ProjectFormState {
   Description: string;
   Github: string;
   WebsiteUrl: string;
-  Technologies: string;
+  Technologies: { id: number; name: string }[];
   Image: File | null;
 }
 
 const ProjectAddPage = () => {
+  const router = useRouter();
   const [isAuthenticated, setIsAuthenticated] = useState<boolean | null>(null);
   const [projectFormState, setProjectFormState] = useState<ProjectFormState>({
     Title: "",
     Description: "",
     Github: "",
     WebsiteUrl: "",
-    Technologies: "",
+    Technologies: [],
     Image: null,
   });
+  const [technologies, setTechnologies] = useState<any>([]);
 
-  /** Handles text input changes */
+  /** Handles text and file input changes */
   const handleOnChange = (e: ChangeEvent<HTMLInputElement>) => {
-    setProjectFormState({
-      ...projectFormState,
-      [e.target.name]: e.target.value,
-    });
+    const { name, value } = e.target;
+
+    setProjectFormState((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  };
+
+  const handleOnSelectChange = (e: ChangeEvent<HTMLSelectElement>) => {
+    const { name, options } = e.target;
+
+    const selectedOptions = Array.from(options)
+      .filter((option) => option.selected)
+      .map((option) => ({
+        id: Number(option.getAttribute("data-key")),
+        name: option.value,
+      }));
+
+    setProjectFormState((prevState: ProjectFormState) => ({
+      ...prevState,
+      [name]: selectedOptions,
+    }));
   };
 
   /** Handles image file selection */
@@ -89,10 +110,8 @@ const ProjectAddPage = () => {
       let ImageUrl = "";
 
       if (projectFormState.Image) {
-        // Step 1: Request pre-signed URL
         const presignedUrl = await getPresignedUrl(projectFormState.Image);
 
-        // Step 2: Upload image to S3
         ImageUrl = await uploadFileToS3(projectFormState.Image, presignedUrl);
       }
 
@@ -106,7 +125,6 @@ const ProjectAddPage = () => {
         ImageUrl: ImageUrl || "",
       };
 
-      // Step 4: Submit project data to backend
       const projectResponse = await axios.post(
         `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/project/add`,
         projectData,
@@ -116,6 +134,15 @@ const ProjectAddPage = () => {
       );
 
       console.log("Project added successfully:", projectResponse.data);
+      setProjectFormState({
+        Title: "",
+        Description: "",
+        Github: "",
+        WebsiteUrl: "",
+        Technologies: [],
+        Image: null,
+      });
+      router.push("/projects");
     } catch (error) {
       console.error("Error adding project:", error);
     }
@@ -126,8 +153,23 @@ const ProjectAddPage = () => {
     const unsubscribe = onAuthStateChanged(auth, (user) =>
       setIsAuthenticated(!!user)
     );
+
+    fetchTechnologies();
+
     return () => unsubscribe();
   }, []);
+
+  const fetchTechnologies = async () => {
+    const response = await axios.get(
+      `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/project/get-technologies`
+    );
+
+    if (response !== null) {
+      console.log({ response });
+      setTechnologies(response.data);
+    }
+  };
+  /** Tracks authentication state */
 
   return (
     <>
@@ -173,13 +215,31 @@ const ProjectAddPage = () => {
                 {/* Technologies */}
                 <div className="flex flex-col w-full py-5">
                   <label>Technologies</label>
-                  <input
-                    type="text"
+                  <select
+                    multiple
                     name="Technologies"
                     className="border-secondary-dark border p-2 rounded-md"
-                    value={projectFormState.Technologies}
-                    onChange={handleOnChange}
-                  />
+                    value={projectFormState.Technologies.map(
+                      (tech) => tech.name
+                    )}
+                    onChange={handleOnSelectChange}
+                  >
+                    {/** Options */}
+                    {technologies?.length &&
+                      technologies.map((t: { id: number; name: string }) => {
+                        return (
+                          <option
+                            data-key={t.id}
+                            aria-multiselectable
+                            key={t.id}
+                            value={t.name}
+                            className="text-secondary-dark"
+                          >
+                            {t.name}
+                          </option>
+                        );
+                      })}
+                  </select>
                 </div>
 
                 {/* Github */}
