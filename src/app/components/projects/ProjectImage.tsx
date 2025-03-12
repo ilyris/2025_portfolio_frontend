@@ -5,7 +5,7 @@ const ProjectImage = ({ image, title }: { image: string; title: string }) => {
   const [loading, setLoading] = useState(true);
 
   return (
-    <div className="relative w-full">
+    <div className="relative w-full max-h-[500px]">
       {loading && <div className="w-full h-auto bg-gray-300 animate-pulse" />}
 
       <Image

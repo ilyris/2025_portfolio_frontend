@@ -4,18 +4,7 @@ import Typography from "../global/Typography";
 const FooterSection = () => {
   return (
     <footer className="pt-20 bg-secondary-dark border-t-[20px] border-secondary-light ">
-      <div className="container mx-auto flex flex-wrap justify-between">
-        <div className="w-1/2">
-          <Typography variant="body1" className="text-primary">
-            I am a software engineer with a focus on Front-end with 7+ years of
-            enterprise experience building scalable solutions for some of the
-            worlds top brands. Beyond writing code, I prioritize creating
-            seamless, intuitive experiences—for both users and fellow engineers.
-            I take an empathetic approach to development, always striving to
-            reduce friction and build systems that feel effortless to use and
-            maintain.
-          </Typography>
-        </div>
+      <div className="container mx-auto flex flex-wrap justify-end">
         <div>
           <ul className="text-primary">
             <li className="text-xl mb-5">

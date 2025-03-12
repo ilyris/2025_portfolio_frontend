@@ -12,6 +12,7 @@
   --secondary-dark: #242038;
   --secondary-light: #8D86C9;
   --light-blue: #0fc4f0;
+  --primary-shadow: rgba(0, 0, 0, 0.55) 0px 20px 80px 0px;
 }
 
 @media (prefers-color-scheme: dark) {

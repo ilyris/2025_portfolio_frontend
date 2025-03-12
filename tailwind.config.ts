@@ -18,6 +18,10 @@ export default {
           light: "var(--secondary-light)",
         },
         lightBlue: "var(--light-blue)",
+        disabledBg: "#B0B0B0",
+      },
+      boxShadow: {
+        primary: "0px 20px 80px 0px",
       },
     },
     animation: {
@@ -43,6 +47,11 @@ export default {
         "0%, 100%": { transform: "translateY(0)", easing: "ease-out" },
         "50%": { transform: "translateY(-10px)", easing: "ease-in" },
       },
+    },
+  },
+  variants: {
+    extend: {
+      backgroundColor: ["disabled"],
     },
   },
   plugins: [],

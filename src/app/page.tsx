@@ -1,6 +1,7 @@
 "use client";
 import MainNavigation from "./components/menus/MainNavigation";
 import BrandsSection from "./components/sections/BrandsSection";
+import ContactSection from "./components/sections/ContactSection";
 import FooterSection from "./components/sections/Footer";
 import HeroSection from "./components/sections/HeroSection";
 import ProjectSection from "./components/sections/ProjectSection";
@@ -19,6 +20,7 @@ export default function Home() {
         <SkillSection />
         <RecommendationSection />
         <BrandsSection />
+        <ContactSection />
         <FooterSection />
       </main>
     </>
