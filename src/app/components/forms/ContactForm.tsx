@@ -27,21 +27,30 @@ const ContactForm = () => {
     Message: "",
   });
 
+  const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
   const isDisabled = Object.values(formErrors).some((val) => val);
+
+  const sanitizeInput = (input: string) => {
+    return input.replace(/["'`;\-]/g, "").trim();
+  };
 
   const handleFormStateChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     const { name, value } = e.target;
+    const sanitizedValue = sanitizeInput(value);
 
     setFormState((prevState) => ({
       ...prevState,
-      [name]: value,
+      [name]: sanitizedValue,
     }));
 
     setFormErrors((prevErrors) => ({
       ...prevErrors,
-      [name]: value.trim() === "",
+      [name]:
+        name === "Email"
+          ? !emailRegex.test(sanitizedValue)
+          : sanitizedValue === "",
     }));
   };
 
