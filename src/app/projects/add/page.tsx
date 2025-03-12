@@ -27,7 +27,9 @@ const ProjectAddPage = () => {
     Technologies: [],
     Image: null,
   });
-  const [technologies, setTechnologies] = useState<any>([]);
+  const [technologies, setTechnologies] = useState<
+    { id: number; name: string }[]
+  >([]);
 
   /** Handles text and file input changes */
   const handleOnChange = (e: ChangeEvent<HTMLInputElement>) => {
