@@ -65,7 +65,7 @@ const ContactForm = () => {
         }
       );
     } catch (err) {
-      console.error("Failed to send message");
+      console.error({ message: "Failed to send message", err });
     } finally {
       setFormState({
         Name: "",
