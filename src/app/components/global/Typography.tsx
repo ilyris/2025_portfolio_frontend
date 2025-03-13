@@ -13,12 +13,12 @@ const Typography: React.FC<TypographyProps> = ({
   className,
 }) => {
   const baseClasses: Record<TypographyProps["variant"], string> = {
-    h1: "text-6xl",
-    h2: "text-5xl",
-    h3: "text-4xl",
-    h4: "text-3xl",
-    h5: "text-2xl",
-    h6: "text-xl",
+    h1: " text-3xl md:text-6xl",
+    h2: " text-3xl md:text-5xl",
+    h3: " text-3xl md:text-4xl",
+    h4: " text-3xl md:text-3xl",
+    h5: " text-3xl md:text-2xl",
+    h6: " text-3xl md:text-xl",
     body1: "text-lg",
   };
 

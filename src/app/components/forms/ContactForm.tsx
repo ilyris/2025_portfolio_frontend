@@ -77,8 +77,8 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="flex shadow-2xl shadow-[rgba(0, 0, 0, 0.55)]">
-      <div className="w-1/2 p-5">
+    <div className="lg:flex shadow-2xl shadow-[rgba(0, 0, 0, 0.55)]">
+      <div className="lg:w-1/2 p-5">
         <Typography variant="h6">About Me.</Typography>
         <p className="py-1">
           <b>Software Engineer</b> | <b>User Enthusiast</b> |{" "}
@@ -92,7 +92,7 @@ const ContactForm = () => {
         </p>
       </div>
       <form
-        className="flex justify-center items-center flex-col w-1/2 p-5 bg-secondary-dark"
+        className="flex justify-center items-center flex-col lg:w-1/2 p-5 bg-secondary-dark"
         onSubmit={handleSubmit}
       >
         {Object.entries(formState).map(([key, value]) => (
@@ -136,7 +136,7 @@ const ContactForm = () => {
         ))}
         <div className="w-full">
           <button
-            className="bg-primary py-3 px-10 rounded-md w-full text-lg disabled:bg-disabledBg"
+            className="bg-primary py-3 px-10 rounded-md w-full text-lg disabled:bg-disabledBg mt-3"
             disabled={isDisabled}
           >
             Send Message

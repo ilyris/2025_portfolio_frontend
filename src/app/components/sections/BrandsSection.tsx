@@ -22,11 +22,19 @@ const BrandsSection = () => {
     <section className="relative w-full py-20 overflow-hidden bg-primary">
       <SectionHeadingContainer title={"Noteable Clients"} />
       <div className="w-full pt-10">
-        <div className="flex gap-20 content-center justify-center">
+        <div className="flex gap-20 content-center justify-center animate-scroll">
           {logos.map((logo, index) => (
             <div
               key={index}
-              className="max-h-[250px] max-w-[150px] content-center"
+              className="max-h-[250px] max-w-[150px] min-w-[100px] content-center"
+            >
+              <Image src={logo.src} alt={logo.alt} />
+            </div>
+          ))}
+          {logos.map((logo, index) => (
+            <div
+              key={`duplicate-${index}`}
+              className="max-h-[250px] max-w-[150px] min-w-[100px] content-center"
             >
               <Image src={logo.src} alt={logo.alt} />
             </div>

@@ -12,8 +12,8 @@ const ProjectCard: React.FC<ProjectResponseDto> = ({
   websiteUrl,
 }) => {
   return (
-    <div className="flex py-20 my-5 justify-between gap-8 max-h-3/4">
-      <div className="w-1/4 flex flex-col gap-5">
+    <div className="flex py-20 my-5 justify-between gap-8 max-h-3/4 flex-col lg:flex-row">
+      <div className="w-full lg:w-1/4 flex flex-col gap-5">
         <div>
           <Typography
             variant="h3"
@@ -60,7 +60,7 @@ const ProjectCard: React.FC<ProjectResponseDto> = ({
           )}
         </div>
       </div>
-      <div className="rounded-xl w-3/4 h-auto">
+      <div className="rounded-xl w-full lg:w-3/4 h-auto">
         <ProjectImage
           image={image as string}
           title={`${title} website image`}

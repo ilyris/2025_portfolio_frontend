@@ -40,7 +40,7 @@ const HeroSection = () => {
           n
         </span>
       </Typography>
-      <div className="w-[50%] text-center mx-auto py-5">
+      <div className="w-full md:w-1/2 text-center mx-auto py-5">
         <Typography variant="h5">
           I am a Software Engineer with 7+ years of enterprise experience,
           building and scaling solutions for some of the world&apos;s most
