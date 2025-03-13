@@ -37,9 +37,9 @@ const SkillSection = () => {
   ];
 
   return (
-    <section className="relative w-full py-20 overflow-hidden container mx-auto">
+    <section className="relative w-full pt-20 overflow-hidden container mx-auto">
       <SectionHeadingContainer title={"Noteable Skills"} />
-      <div className="w-full overflow-hidden py-20 mt-20">
+      <div className="w-full overflow-hidden pt-20 md:mt-20">
         <div className="flex space-x-10 animate-scroll">
           {logos.map((logo, index) => (
             <div key={index} className="flex-shrink-0">

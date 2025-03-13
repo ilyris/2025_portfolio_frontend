@@ -8,7 +8,7 @@ const SectionHeadingContainer: React.FC<SectionHeadingContainerProps> = ({
   title,
 }) => {
   return (
-    <div className="container mx-auto flex items-center pb-20">
+    <div className="container mx-auto flex items-center md:pb-20">
       <div className=" w-1/5 lg:w-2/5 h-[5] bg-secondary-dark"></div>
       <Typography
         variant="h2"

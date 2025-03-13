@@ -77,7 +77,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="lg:flex shadow-2xl shadow-[rgba(0, 0, 0, 0.55)]">
+    <div className="pt-20 lg:flex shadow-2xl shadow-[rgba(0, 0, 0, 0.55)]">
       <div className="lg:w-1/2 p-5">
         <Typography variant="h6">About Me.</Typography>
         <p className="py-1">

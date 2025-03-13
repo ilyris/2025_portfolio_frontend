@@ -45,7 +45,7 @@ const RecommendationCard: React.FC<RecommendationCardProps> = ({
   const isEven = index % 2 === 0;
   return (
     <div className={`md:flex ${isEven && "flex-row-reverse"}`}>
-      <div className="px-5 py-10 rounded-xl my-20 recommendation-card relative w-3/4 m-auto">
+      <div className="px-5 py-10 rounded-xl my-20 recommendation-card relative w-full md:w-3/4 m-auto">
         <div className="quote-left w-[70] absolute top-[-50px] left-0 text-secondary">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
             <path
