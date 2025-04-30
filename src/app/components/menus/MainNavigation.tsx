@@ -17,7 +17,7 @@ const MainNavigation = () => {
       <ul>
         <MainLink path="/" variant="primary" text="Home" />
         <MainLink path="/projects" variant="primary" text="Projects" />
-        <MainLink path="/" variant="secondary" text="Contact" />
+        {/* <MainLink path="/" variant="secondary" text="Contact" /> */}
       </ul>
     </nav>
   );
