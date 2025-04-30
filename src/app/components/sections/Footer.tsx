@@ -3,7 +3,7 @@ import Typography from "../global/Typography";
 
 const FooterSection = () => {
   return (
-    <footer className="pt-20 bg-secondary-dark border-t-[20px] border-secondary-light ">
+    <footer className="pt-20 bg-secondary-dark border-t-[20px] border-secondary-light dark:bg-[#242038]">
       <div className="container mx-auto flex flex-wrap justify-end">
         <div>
           <ul className="text-primary">

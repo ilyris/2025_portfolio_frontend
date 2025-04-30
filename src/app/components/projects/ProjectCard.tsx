@@ -17,7 +17,7 @@ const ProjectCard: React.FC<ProjectResponseDto> = ({
         <div>
           <Typography
             variant="h3"
-            className="text-center py-10 font-bold  bg-secondary-light"
+            className="text-center py-10 font-bold  bg-secondary-light dark:bg-black"
           >
             {title}
           </Typography>
@@ -36,7 +36,10 @@ const ProjectCard: React.FC<ProjectResponseDto> = ({
               </span>
             </Link>
           )}
-          <Typography variant="body1" className="pt-5 text-secondary-dark">
+          <Typography
+            variant="body1"
+            className="pt-5 text-secondary-dark dark:text-black"
+          >
             {description}
           </Typography>
         </div>
@@ -44,7 +47,7 @@ const ProjectCard: React.FC<ProjectResponseDto> = ({
           {technologies.map((tech: { id: number; name: string }) => (
             <span
               key={tech.id}
-              className="rounded-xl bg-secondary-dark text-primary py-1 px-3 break-all font-bold tracking-[1]"
+              className="rounded-xl bg-secondary-dark text-primary py-1 px-3 break-all font-bold tracking-[1] dark:bg-black"
             >
               {tech.name}
             </span>

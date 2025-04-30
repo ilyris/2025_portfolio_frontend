@@ -92,7 +92,7 @@ const ContactForm = () => {
         </p>
       </div>
       <form
-        className="flex justify-center items-center flex-col lg:w-1/2 p-5 bg-secondary-dark"
+        className="flex justify-center items-center flex-col lg:w-1/2 p-5 bg-secondary-dark dark:bg-[#242038]"
         onSubmit={handleSubmit}
       >
         {Object.entries(formState).map(([key, value]) => (
