@@ -8,7 +8,6 @@ import SectionHeadingContainer from "../global/SectionHeadingContainer";
 import projectData from "@/data/projectMockData.json";
 
 const ProjectSection = () => {
-  console.log(projectData.projects);
   // const [projects, setProjects] = useState<ProjectResponseDto[]>([]);
   // const [isFetchingData, setIsFetchingData] = useState<boolean>(true);
 
