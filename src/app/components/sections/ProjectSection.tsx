@@ -1,9 +1,9 @@
 "use client";
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 import { ProjectResponseDto } from "../../../../typings";
 import ProjectCard from "../projects/ProjectCard";
-import axios from "axios";
-import ProjectCardSkeleton from "../projects/ProjectCardSkeleton";
+// import axios from "axios";
+// import ProjectCardSkeleton from "../projects/ProjectCardSkeleton";
 import SectionHeadingContainer from "../global/SectionHeadingContainer";
 import projectData from "@/data/projectMockData.json";
 
