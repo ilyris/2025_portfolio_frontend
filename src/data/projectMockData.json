@@ -1,0 +1,83 @@
+{
+    "projects": [
+      {
+        "id": 1,
+        "title": "Bond Ladder",
+        "description": "This tool was built to help financial advisors build a bond ladder for their new clients. The bond ladder tool was highly anticipated and did not disappoint when we hit the market.",
+        "image": "https://2025-portfolio-project-images.s3.us-west-2.amazonaws.com/bond_ladder_snapshot.jpg",
+        "technologies": [
+          { "id": 1, "name": "React" },
+          { "id": 2, "name": "TypeScript" },
+          { "id": 3, "name": "NextJS" },
+          { "id": 4, "name": "Bootstrap" },
+          { "id": 5, "name": "Vitest" },
+          { "id": 6, "name": "JIRA" },
+          { "id": 7, "name": "SCRUM" },
+          { "id": 8, "name": "High Carts" }
+        ],
+        "github": null,
+        "websiteUrl": "https://www.invesco.com/bulletshares/tools/bond-ladder"
+      },
+      {
+        "id": 2,
+        "title": "Qubit",
+        "description": "QuBit is an interface built to interact with Autostores robot grid. The application can be used for manually picking orders or making requests to the grid for the robots to grab grocery inventory from the system. The features I built within QuBit include but are not limited to: an inventory auditing system for Amazon and all other clients, and a new refactored Inventory Management system",
+        "image": "https://2025-portfolio-project-images.s3.us-west-2.amazonaws.com/Qubit_snapshot.jpg",
+        "technologies": [
+          { "id": 1, "name": "React" },
+          { "id": 2, "name": "TypeScript" },
+          { "id": 3, "name": "NextJS" },
+          { "id": 9, "name": "C#" },
+          { "id": 5, "name": "Vitest" },
+          { "id": 6, "name": "JIRA" },
+          { "id": 7, "name": "SCRUM" },
+          { "id": 10, "name": "Cypress.io" },
+          { "id": 11, "name": "PlayWright" },
+          { "id": 12, "name": "Jest" },
+          { "id": 13, "name": "MUI" },
+          { "id": 14, "name": "Google Analytics" }
+        ],
+        "github": null,
+        "websiteUrl": "https://www.autostoresystem.com/system/qubit-fulfillment-platform"
+      },
+      {
+        "id": 3,
+        "title": "Rizzoli Bookstore",
+        "description": "Rizzoli is one of New Yorks largest premium bookstores. I was the primary developer for Rizzoli building out their custom pages, features, and managing their Ecommerce platform.",
+        "image": "https://2025-portfolio-project-images.s3.us-west-2.amazonaws.com/Rizzoli_bookstore_website.jpg",
+        "technologies": [
+          { "id": 1, "name": "React" },
+          { "id": 15, "name": "jQuery" },
+          { "id": 16, "name": "PHP" },
+          { "id": 17, "name": "Drupal" },
+          { "id": 18, "name": "MYSQL" },
+          { "id": 6, "name": "JIRA" },
+          { "id": 7, "name": "SCRUM" },
+          { "id": 19, "name": "JavaScript" },
+          { "id": 20, "name": "CSS" },
+          { "id": 21, "name": "HTML" }
+        ],
+        "github": null,
+        "websiteUrl": "https://www.rizzolibookstore.com/rizzoli-bookstore-subscription"
+      },
+      {
+        "id": 4,
+        "title": "Wisconsin State Dairy Fair",
+        "description": "Wisconsin State Dairy Fair was a website project I built out from scratch utilizing the Drupal platform. The site was intended to showcase what the state fair wants to do and what they will do. Esentially being a promotion board.",
+        "image": "https://2025-portfolio-project-images.s3.us-west-2.amazonaws.com/Wis_dairy_board_promo.jpg",
+        "technologies": [
+          { "id": 1, "name": "React" },
+          { "id": 2, "name": "TypeScript" },
+          { "id": 3, "name": "NextJS" },
+          { "id": 4, "name": "Bootstrap" },
+          { "id": 5, "name": "Vitest" },
+          { "id": 6, "name": "JIRA" },
+          { "id": 7, "name": "SCRUM" },
+          { "id": 8, "name": "High Carts" }
+        ],
+        "github": null,
+        "websiteUrl": "https://wsfdairypromo.org/"
+      }
+    ]
+  }
+  
