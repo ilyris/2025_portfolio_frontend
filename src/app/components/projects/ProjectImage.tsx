@@ -7,11 +7,11 @@ const ProjectImage = ({ image, title }: { image: string; title: string }) => {
   return (
     <div className="relative w-full">
       {loading && (
-        <div className="w-full h-[500px] bg-gray-300 animate-pulse" />
+        <div className="w--[500px] h-[500px] bg-gray-300 animate-pulse" />
       )}
 
       <Image
-        className={`w-full transition-opacity duration-300 h-full ${
+        className={` transition-opacity duration-300 w-full  ${
           loading ? "opacity-0" : "opacity-100"
         }`}
         src={image}
